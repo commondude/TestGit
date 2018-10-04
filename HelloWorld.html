@@ -1,5 +1,25 @@
-<html>
+<!DOCTYPE HTML>
+<style>
+	h3 {
+		font-size: 25px;
+		text-align: center;
+	}
+	.diffColor {
+		animation: changeColor 5s ease-out 0s infinite alternate;
+	}
+	@keyframes changeColor {
+		0% {color: red}
+		20% {color: orange;}
+		40% {color: yellow;}
+		60% {color: green;}
+		80% {color: blue;}
+		100% {color: purple;}
+	}
+</style>
+
+<head>
 	<title> Hello World!</title>
+</head>
 <body>
-Hello World!
+	<h3 id="text" class="diffColor">Hello World!</h3>
 </body>
